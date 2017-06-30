@@ -14,12 +14,12 @@
         <div class="col-md-4">
           <img class="img-fluid d-block" src="geschaeftslogo.png"> </div>
         <div class="col-md-8 py-4">
-          <ul class="nav nav-tabs nav-justified" id="myTab">
-            <li class="nav-item" role="presentation">
-              <a href="#" class="active nav-link"> <i class="fa fa-home fa-home"></i>&nbsp;Produkte</a>
+          <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a href="#Info" class="nav-link active" role="tab" data-toggle="tab"> <i class="fa fa-home fa-home"></i>&nbsp;Info</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-home fa-home"></i>&nbsp;Produkte</a>
+              <a class="nav-link dropdown-toggle" data-toggle="tab dropdown" href="#Produkte" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-home fa-home"></i>&nbsp;Produkte</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Action</a>
                 <a href="#" class="dropdown-item">Another action</a>
@@ -29,15 +29,22 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><span class="glyphicon glyphicon-th-list" aria-hiden="true"></span> Leistungen</a>
+              <a class="nav-link" href="#Leistungen" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-th-list" aria-hiden="true"></span> Leistungen</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Unternehmen</a>
+              <a class="nav-link" href="#Unternehmen" data-toggle="tab" role="tab">Unternehmen</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Kontakt</a>
+              <a class="nav-link" href="#Kontakt" data-toggle="tab" role="tab">Kontakt</a>
             </li>
           </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="Info" role="tabpanel">Info ...</div>
+            <div class="tab-pane" id="Produkte" role="tabpanel">Produkte...</div>
+            <div class="tab-pane" id="Leistungen" role="tabpanel">Leistungen...</div>
+            <div class="tab-pane" id="Unternehmen" role="tabpanel">Unternehmen...</div>
+            <div class="tab-pane" id="Kontakt" role="tabpanel">Kontakt...</div>
+          </div>
         </div>
       </div>
     </div>
